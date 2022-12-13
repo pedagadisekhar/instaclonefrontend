@@ -13,7 +13,7 @@ const Api = ()=> {
             "Accept":"application/json"
         }
         }
-        fetch('https://instaclonechandu.herokuapp.com/posts',httpoptions)
+        fetch('https://chandu-insta-clone.onrender.com/posts',httpoptions)
         .then((data) => data.json()).then((data)=> {
             console.log(data)
             setdata(data.posts.reverse())
@@ -42,7 +42,7 @@ return (
             </section>
 
             <section className="card-image">
-                <img src={`https://instaclonechandu.herokuapp.com/images/${item.PostImage}`} alt='imageicon' />
+                <img src={`https://chandu-insta-clone.onrender.com/images/${item.PostImage}`} alt='imageicon' />
                 {/* <img src={`data:image/png;${base64String}`}/> */}
             </section>
 

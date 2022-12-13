@@ -21,7 +21,7 @@ const Login = () => {
         formdata.append("location", location);
         formdata.append("description", description)
         formdata.append("PostImage", image)
-        await Axios.post(' https://instaclonechandu.herokuapp.com/posts', (formdata))
+        await Axios.post('https://chandu-insta-clone.onrender.com/posts', (formdata))
             .then(res => { console.log(res) })
             .catch(error => {
                 console.log(error)
